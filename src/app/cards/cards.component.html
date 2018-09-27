@@ -1,0 +1,17 @@
+
+<div class="card ml-5 mt-5" style="width: 15rem;" appHover>
+  <img class="card-img-top" src="{{user.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5
+      class="card-title"
+      [ngClass]="{'marked': isMarked}"
+    >
+      {{ user.name }}
+    </h5>
+    <p class="card-text">{{user.geo}}</p>
+    <a
+      (click)="onClick()"
+      href="#" class="btn-lg btn-danger"
+    >Սեղմիր</a>
+  </div>
+</div>
